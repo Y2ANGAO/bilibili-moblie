@@ -1,0 +1,187 @@
+// 头部
+.head{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    // logo，搜索
+    .logo-search{
+        height: 10.667vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0vw 3.2vw 0vw 4.8vw;
+        .search{
+            width: 42.667vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img:nth-of-type(1){
+                width: 6.4vw;
+            }
+            .download{
+                width: 19.2vw;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .Navbar_logo{
+            color: #fb7299;
+            font-size: 7.467vw;
+        }
+        .ic_search_tab{
+            color: #ccc;
+            font-size: 5.86667vw;
+        }
+    }
+    // 导航
+    .nav{
+        position: relative;
+        height: 10.667vw;
+        border-bottom: 0.267vw solid rgba($color: #000000, $alpha: .1);
+        .nav-text-list{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+            position: absolute;
+            top: 2.667vw;
+            left: 0;
+            padding: 0vw 5.333vw;
+            box-sizing: border-box;
+            overflow: hidden;
+            z-index: 2;
+            background-color: white;
+            transition: .5s;
+            transition-property: height;
+            a{
+                padding: 2.667vw 2.133vw;
+                font-size: 3.733vw;
+                height: 3.733vw;
+                line-height: 3.733vw;
+                &:hover{
+                    color: #fb7299;
+                }
+            }
+            .general_pullup_s{
+                font-size: 5.333vw;
+                color: #aaa;
+                position: absolute;
+                bottom: 4vw;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .nav-text{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-y: hidden;
+            height: 100%;
+            padding-right: 10.667vw;
+            &::-webkit-scrollbar{
+                height: 0vw;
+            }
+            a{
+                padding: 0vw 3.733vw;
+                white-space: nowrap;
+                font-size: 3.733vw;
+                height: 100%;
+                line-height: 10.667vw;
+                &:hover{
+                    color: #fb7299;
+                    border-bottom: 1px solid #fb7299;
+                }
+            }
+        }
+        .nav-text-bottom{
+            position: absolute;
+            top: 0;
+            right: -0.267vw;
+            height: 10.667vw;
+            width: 10.667vw;
+            background-color: white;
+            text-align: center;
+            .general_pulldown_s{
+                font-size: 5.333vw;
+                line-height: 10.667vw;
+                color: #aaa;
+            }
+        }
+    }
+}
+// 主体
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0vw 1.333vw;
+    margin-top: 21.333vw;
+    a{
+        position: relative;
+        width: 45.867vw;
+        padding: 2.133vw 1.333vw;
+        img{
+            width: 100%;
+            height: 25.867vw;
+            vertical-align: middle;
+        }
+        .text{
+            font-size: 3.2vw;
+            margin-top: 1.6vw;
+        }
+        span{
+            position: absolute;
+            top: 22.133vw;
+            font-size: 3.2vw;
+            color: white;
+            i{
+                vertical-align: bottom;
+            }
+        }
+        .bo{
+            left: 2.667vw;
+        }
+        .dan{
+            right: 2.667vw;
+        }
+    }
+}
+// 底部
+.foot{
+    .home-more{
+        font-size: 3.733vw;
+        padding: 5.333vw 0vw;
+        text-align: center;
+        color: #999;
+    }
+    .foot-text{
+        background-color: #f4f4f4;
+        height: 32vw;
+        padding: 3.2vw 1.333vw;
+        box-sizing: border-box;
+        p{
+            font-size: 3.2vw;
+            text-align: center;
+            color: #999;
+            height: 6.4vw;
+            line-height: 6.4vw;
+        }
+    }
+}
+.float-openapp{
+    position: fixed;
+    width: 100%;
+    bottom: 8vw;
+    height: 9.6vw;
+    text-align: center;
+    color: white;
+    .text{
+        background-color: #fb7299;
+        border-radius: 6.66667vw;
+        margin: 0vw 3.2vw;
+        height: 100%;
+        font-size: 3.733vw;
+        line-height: 9.6vw;
+    }
+}
+
